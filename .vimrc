@@ -61,10 +61,6 @@ set colorcolumn=120
 map <C-F11> :CommandTFlush <CR>
 let g:CommandTMaxFiles=30000
 
-" PyLint
-autocmd FileType python compiler pylint
-let g:pylint_onwrite = 0
-
 " SCons
 au BufNewFile,BufRead SCons* set filetype=scons
 
