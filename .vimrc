@@ -84,3 +84,8 @@ let g:haddock_browser_callformat = "%s %s"
 map <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " let g:ycm_server_use_vim_stdout = 1
 " let g:ycm_server_log_level = 'debug'
+
+" colored current line and column
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
