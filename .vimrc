@@ -12,7 +12,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/Vundle.vi'
+Bundle 'gmarik/Vundle.vim'
 
 Bundle 'wincent/Command-T'
 Bundle 'Valloric/YouCompleteMe'
@@ -24,6 +24,8 @@ Bundle 'pbrisbin/html-template-syntax'
 Bundle 'Shougo/vimproc'
 Bundle 'eagletmt/ghcmod-vim'
 Bundle 'Shougo/unite.vim'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'vim-scripts/vcscommand.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
