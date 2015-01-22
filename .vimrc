@@ -24,7 +24,6 @@ Bundle 'pbrisbin/html-template-syntax'
 Bundle 'Shougo/vimproc'
 Bundle 'eagletmt/ghcmod-vim'
 Bundle 'Shougo/unite.vim'
-Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/vcscommand.vim'
 
 " All of your Plugins must be added before the following line
