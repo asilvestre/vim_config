@@ -25,6 +25,8 @@ Bundle 'Shougo/vimproc'
 Bundle 'eagletmt/ghcmod-vim'
 Bundle 'Shougo/unite.vim'
 Bundle 'vim-scripts/vcscommand.vim'
+" pep8 python indenting
+Bundle 'vim-scripts/indentpython.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
