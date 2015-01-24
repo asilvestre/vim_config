@@ -2,6 +2,7 @@
 syntax on
 set nocp
 filetype plugin on
+set guifont=Monaco\ 9
 
 " Set lines above and below to trigger scroll
 " set scrolloff=20
@@ -23,12 +24,14 @@ Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Valloric/ListToggle'
 Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
 Bundle 'elzr/vim-json'
 Bundle 'vim-scripts/LogViewer'
 Bundle 'vim-scripts/searchfold.vim'
 Bundle 'pbrisbin/html-template-syntax'
+Bundle 'wincent/Command-T'
+Bundle 'Shougo/vimproc'
+Bundle 'eagletmt/ghcmod-vim'
 " Bundle 'nvie/vim-flake8'
 
 filetype plugin indent on     " required!
@@ -55,22 +58,6 @@ command! XmlLint call DoXmlLint()
 nnoremap <C-W>O :call MaximizeToggle ()<CR>
 nnoremap <C-W>o :call MaximizeToggle ()<CR>
 nnoremap <C-W><C-O> :call MaximizeToggle ()<CR>
-
-function! MaximizeToggle()
-  if exists("s:maximize_session")
-    exec "source " . s:maximize_session
-    call delete(s:maximize_session)
-    unlet s:maximize_session
-    let &hidden=s:maximize_hidden_save
-    unlet s:maximize_hidden_save
-  else
-    let s:maximize_hidden_save = &hidden
-    let s:maximize_session = tempname()
-    set hidden
-    exec "mksession! " . s:maximize_session
-    only
-  endif
-endfunction
 
 if has("autocmd")
   " Enable file type detection.
@@ -107,8 +94,8 @@ let g:CommandTMaxFiles=30000
 
 
 " PyLint
-autocmd FileType python compiler pylint
-let g:pylint_onwrite = 0
+" autocmd FileType python compiler pylint
+" let g:pylint_onwrite = 0
 
 
 " SCons
@@ -143,10 +130,6 @@ set tags+=~/.vim/tags/qt4
 
 set wildignore+=external/boost,*.o,*.obj,*.git,*.pyc
 
-" Haskell
-" use ghc functionality for haskell files
-au Bufenter *.hs compiler ghc
-
 " switch on syntax highlighting
 syntax on
 set synmaxcol=150
@@ -162,4 +145,3 @@ let g:haddock_browser_callformat = "%s %s"
 
 " key mappings for YCM
 map <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
