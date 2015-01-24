@@ -23,6 +23,7 @@ Bundle 'vim-scripts/searchfold.vim'
 Bundle 'pbrisbin/html-template-syntax'
 Bundle 'Shougo/vimproc'
 Bundle 'eagletmt/ghcmod-vim'
+Bundle 'eagletmt/neco-ghc'
 Bundle 'Shougo/unite.vim'
 Bundle 'vim-scripts/vcscommand.vim'
 " pep8 python indenting
@@ -66,11 +67,6 @@ let g:CommandTMaxFiles=30000
 " SCons
 au BufNewFile,BufRead SCons* set filetype=scons
 
-
-" Haskell
-" use ghc functionality for haskell files
-au Bufenter *.hs compiler ghc
-
 " switch on syntax highlighting
 syntax on
 set synmaxcol=150
@@ -81,6 +77,8 @@ filetype plugin on
 " configure browser for haskell_doc.vim
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
+" Let neco-ghc be a source for YouCompleteMe
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
 " key mappings for YCM
 map <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
