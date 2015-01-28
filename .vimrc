@@ -28,6 +28,8 @@ Bundle 'Shougo/unite.vim'
 Bundle 'vim-scripts/vcscommand.vim'
 " pep8 python indenting
 Bundle 'vim-scripts/indentpython.vim'
+" Support for C++11 syntax
+Bundle 'vim-jp/cpp-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -84,6 +86,7 @@ let g:ycm_semantic_triggers = {'haskell' : ['.']}
 map <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " let g:ycm_server_use_vim_stdout = 1
 " let g:ycm_server_log_level = 'debug'
+" let g:ycm_server_keep_logfiles = 1
 
 " colored current line and column
 au WinLeave * set nocursorline nocursorcolumn
