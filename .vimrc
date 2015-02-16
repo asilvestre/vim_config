@@ -28,6 +28,8 @@ Bundle 'Shougo/unite.vim'
 Bundle 'vim-scripts/vcscommand.vim'
 " pep8 python indenting
 Bundle 'vim-scripts/indentpython.vim'
+" better indenting and highlighting of haskell code
+Bundle 'raichoo/haskell-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -78,7 +80,7 @@ filetype plugin on
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
 " Let neco-ghc be a source for YouCompleteMe
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
+" let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
 " key mappings for YCM
 map <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
