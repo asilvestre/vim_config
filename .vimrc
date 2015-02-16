@@ -28,6 +28,8 @@ Bundle 'Shougo/unite.vim'
 Bundle 'vim-scripts/vcscommand.vim'
 " pep8 python indenting
 Bundle 'vim-scripts/indentpython.vim'
+" Support for C++11 syntax
+Bundle 'vim-jp/cpp-vim'
 " better indenting and highlighting of haskell code
 Bundle 'raichoo/haskell-vim'
 
@@ -86,6 +88,7 @@ let g:haddock_browser_callformat = "%s %s"
 map <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " let g:ycm_server_use_vim_stdout = 1
 " let g:ycm_server_log_level = 'debug'
+" let g:ycm_server_keep_logfiles = 1
 
 " colored current line and column
 au WinLeave * set nocursorline nocursorcolumn
