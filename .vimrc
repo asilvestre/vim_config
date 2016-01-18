@@ -24,6 +24,7 @@ Bundle 'vim-scripts/searchfold.vim'
 Bundle 'pbrisbin/html-template-syntax'
 Bundle 'Shougo/vimproc'
 Bundle 'eagletmt/ghcmod-vim'
+Bundle 'eagletmt/neco-ghc'
 Bundle 'Shougo/unite.vim'
 Bundle 'vim-scripts/vcscommand.vim'
 " pep8 python indenting
@@ -70,7 +71,8 @@ au BufNewFile,BufRead SCons* set filetype=scons
 
 " Haskell
 " use ghc functionality for haskell files
-au Bufenter *.hs compiler ghc
+" au Bufenter *.hs compiler ghc
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
 " switch on syntax highlighting
 syntax on
