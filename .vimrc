@@ -38,6 +38,7 @@ Bundle 'vim-jp/cpp-vim'
 Bundle 'raichoo/haskell-vim'
 " Support for puppet
 Bundle 'rodjek/vim-puppet'
+Bundle 'godlygeek/tabular'
 " Support for JavaScript
 Bundle 'pangloss/vim-javascript'
 
