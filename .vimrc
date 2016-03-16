@@ -14,6 +14,7 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/Vundle.vim'
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'Valloric/YouCompleteMe'
@@ -33,6 +34,8 @@ Bundle 'dkprice/vim-easygrep'
 Bundle 'vim-scripts/indentpython.vim'
 " Support for C++11 syntax
 Bundle 'vim-jp/cpp-vim'
+" better indenting and highlighting of haskell code
+Bundle 'raichoo/haskell-vim'
 " Support for puppet
 Bundle 'rodjek/vim-puppet'
 " Support for JavaScript
@@ -118,3 +121,5 @@ let g:EasyGrepFilesToExclude = ".git,node_modules,bower_components"
 
 " YouCompleteMe tab
 
+" ghc-mod
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
