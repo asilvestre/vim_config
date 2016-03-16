@@ -32,6 +32,8 @@ Bundle 'vim-scripts/indentpython.vim'
 Bundle 'vim-jp/cpp-vim'
 " better indenting and highlighting of haskell code
 Bundle 'raichoo/haskell-vim'
+" Support for puppet
+Bundle 'rodjek/vim-puppet'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -95,3 +97,6 @@ let g:ycm_confirm_extra_conf = 0
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
+
+" ghc-mod
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
