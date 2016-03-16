@@ -89,6 +89,7 @@ map <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " let g:ycm_server_use_vim_stdout = 1
 " let g:ycm_server_log_level = 'debug'
 " let g:ycm_server_keep_logfiles = 1
+let g:ycm_confirm_extra_conf = 0
 
 " colored current line and column
 au WinLeave * set nocursorline nocursorcolumn
