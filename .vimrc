@@ -41,6 +41,8 @@ Bundle 'rodjek/vim-puppet'
 Bundle 'godlygeek/tabular'
 " Support for JavaScript
 Bundle 'pangloss/vim-javascript'
+" switch between header and cpp
+Bundle 'vim-scripts/a.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -124,3 +126,6 @@ let g:EasyGrepFilesToExclude = ".git,node_modules,bower_components"
 
 " ghc-mod
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+
+let g:syntastic_puppet_checkers=['puppetlint']
+let g:syntastic_puppet_puppetlint_args=['--no-80chars-check']
