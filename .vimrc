@@ -42,7 +42,7 @@ filetype plugin indent on     " required!
 
 " Configure syntastic python
 let g:syntastic_python_flake8_args="--max-line-length=120"
-let g:syntastic_python_pylint_args="--max-line-length=120"
+let g:syntastic_python_pylint_args="--max-line-length=120 --load-plugins pylint_django"
 
 " Mediawiki
 augroup filetypedetect 
