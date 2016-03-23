@@ -129,3 +129,4 @@ autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
 let g:syntastic_puppet_checkers=['puppetlint']
 let g:syntastic_puppet_puppetlint_args=['--no-80chars-check']
+let g:syntastic_puppet_puppet_args = '--parser=future'
