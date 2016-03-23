@@ -43,6 +43,8 @@ Bundle 'godlygeek/tabular'
 Bundle 'pangloss/vim-javascript'
 " switch between header and cpp
 Bundle 'vim-scripts/a.vim'
+" Asciidoc enhanced handling
+Bundle 'dahu/vim-asciidoc'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,7 +53,7 @@ filetype plugin indent on     " required!
 
 " Configure syntastic python
 let g:syntastic_python_flake8_args="--max-line-length=120"
-let g:syntastic_python_pylint_args="--max-line-length=120"
+let g:syntastic_python_pylint_args="--max-line-length=120 --load-plugins pylint_django"
 let python_highlight_all=1
 
 " NertTree
