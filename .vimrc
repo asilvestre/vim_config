@@ -1,6 +1,5 @@
 " General Stuff
 syntax on
-colorscheme monokai
 set nocp
 filetype plugin on
 
@@ -44,6 +43,10 @@ Bundle 'pangloss/vim-javascript'
 " switch between header and cpp
 Bundle 'vim-scripts/a.vim'
 " Asciidoc enhanced handling
+Bundle 'dahu/vimple'
+Bundle 'dahu/Asif'
+Bundle 'Raimondi/VimRegStyle'
+Bundle 'vim-scripts/SyntaxRange'
 Bundle 'dahu/vim-asciidoc'
 
 " All of your Plugins must be added before the following line
