@@ -218,5 +218,5 @@ vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 "set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
-set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
-set list
+"set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
+"set list
