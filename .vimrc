@@ -80,9 +80,6 @@ augroup END
 " Highlight search
 :set hlsearch
 
-" Set linenumber
-:set number
-
 " Status bar
 set laststatus=2
 set statusline=%t\ %y\ format:\ %{&ff};\ [%c,%l]
@@ -159,6 +156,7 @@ filetype plugin indent on
 
 set nocompatible
 set number
+set rnu
 set nowrap
 set showmode
 set smartcase
